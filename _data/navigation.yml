@@ -1,12 +1,16 @@
-- name: Home
+- name: HOME
   link: /index/
   new_window: false
   highlight: false
-- name: Mission
+- name: MISSION
   link: /mission/
   new_window: false
   highlight: false
-- name: Our System
+- name: SYSTEM
   link: /system/
+  new_window: false
+  highlight: false
+- name: CONTACT
+  link: /contact/
   new_window: false
   highlight: false
