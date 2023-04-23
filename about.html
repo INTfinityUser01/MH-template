@@ -1,17 +1,42 @@
 ---
-title: Our team
-description: >-
-  We've built an amazing, fantastic team of developers, marketers, designers and
-  sales people.
+title: About Us
 ---
 
-<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
-<ul class="staff">
-	{% for person in site.staff_members %}
-		<li>
-			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
-			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
-			<div class="position">{{ person.position }}</div>
-		</li>
-	{% endfor %}
-</ul>
+
+<div class="content">
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>Our Values</h2>
+				<p>At our company, we believe in delivering value to our customers through exceptional service, innovation, and integrity. Our team is committed to providing customized solutions that meet our clients' unique needs, and we pride ourselves on delivering high-quality services that exceed expectations. We place a strong emphasis on innovation, continuously seeking out new technologies and approaches to help our clients achieve their goals. And perhaps most importantly, we believe in conducting business with honesty, transparency, and respect, building long-lasting relationships with our clients based on trust and mutual benefit. Our ultimate goal is to be a partner that our clients can rely on for high-quality solutions and exceptional service, now and in the future.</p>
+			</div>
+			<div class="image">
+				<img src="{{ site.baseurl }}/images/value.jpg" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>Eco</h2>
+				<p>Our company is committed to sustainability and reducing our environmental impact. We recognize the importance of taking action to address climate change and are committed to doing our part to create a more sustainable future. To this end, we have implemented various initiatives to reduce our carbon footprint and promote sustainability in our operations. These include reducing energy consumption through the use of energy-efficient technology, implementing recycling programs, and promoting sustainable practices among our employees. We also seek to work with like-minded partners and suppliers who share our commitment to sustainability, and we are continuously exploring new ways to reduce our environmental impact. We believe that by prioritizing sustainability, we can make a positive contribution to the health of the planet and the well-being of future generations.</p>
+			</div>
+			<div class="image">
+				<img src="{{ site.baseurl }}/images/eco.jpg" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>CSR</h2>
+				<p>Our company is committed to corporate social responsibility (CSR) and making a positive impact on the communities in which we operate. We recognize that as a responsible corporate citizen, we have a duty to use our resources and expertise to address social and environmental issues and promote sustainable development. To this end, we have implemented various initiatives to support CSR, including donating a percentage of our profits to charitable organizations, sponsoring community events and programs, and encouraging employee volunteerism. We also seek to work with suppliers and partners who share our commitment to CSR and sustainable development. We believe that by prioritizing CSR, we can help build stronger, healthier communities and contribute to a more sustainable and equitable world.</p>
+			</div>
+			<div class="image">
+				<img src="{{ site.baseurl }}/images/csr.jpg" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+</div>
