@@ -1,8 +1,8 @@
 - links:
   - name: HOME
     link: /index/
-  - name: MISSION
-    link: /mission/
+  - name: ABOUT
+    link: /about/
   - name: SYSTEM
     link: /system/
   - name: CONTACT
