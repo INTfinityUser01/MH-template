@@ -1,97 +1,42 @@
 ---
-title: Pricing
-heading: Find the perfect plan for your business
-description: All plans include our award winning sales optimization solution to track your sales in real time.
-pricing_table:
-  - name: Basic
-    color: "#8e8e8e"
-    features:
-      - text: $25 per month
-        highlight: true
-      - text: Up to 5 users
-        highlight: false
-      - text: Basic lead scoring
-        highlight: false
-      - text: CRM
-        highlight: false
-      - text: Basic reporting
-        highlight: false
-      - text: Sales map
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=basic
-      text: Get started
-  - name: Pro
-    color: "#4a4a4a"
-    features:
-      - text: $99 per month
-        highlight: true
-      - text: Everything in Basic
-        highlight: false
-      - text: Up to 25 users
-        highlight: false
-      - text: Advanced lead scoring
-        highlight: false
-      - text: Pipeline management
-        highlight: false
-      - text: Advanced reporting
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=pro
-      text: Get started
-  - name: Professional
-    color: "#000000"
-    features:
-      - text: $299 per month
-        highlight: true
-      - text: Everything in Basic and Pro
-        highlight: false
-      - text: Up to 100 users
-        highlight: false
-      - text: Campaign builder
-        highlight: false
-      - text: Machine learning
-        highlight: false
-      - text: Calendar
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=professional
-      text: Get started
-faq:
-  - question: What types of payment do you accept?
-    answer: Credit cards including MasterCard, Visa or American Express.
-  - question: Can I change my plan at a later time?
-    answer: Yes, you can upgrade and downgrade your plan at anytime.
-  - question: Do you offer pricing for nonprofit organizations?
-    answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
-  - question: Questions?
-    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+title: Our Mission
 ---
-<div class="plans">
-	{% for plan in page.pricing_table %}
-		<ul class="plan">
-			<li style="background: {{ plan.color }}">
-				<h3>{{ plan.name }}</h3>
-			</li>
-			{% for feature in plan.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
-			{% endfor %}
 
-			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
-		</ul>
-	{% endfor %}
-</div>
 
-{% if page.faq %}
-	<h2>Pricing FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
+<div class="content">
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>What we do</h2>
+				<p>Matterhorn System's as an IT implementation company is to empower organizations with customized solutions that drive innovation, efficiency, and growth. We work closely with our clients to understand their business objectives and provide high-quality services that ensure successful outcomes. Our commitment to excellence, collaboration, and continuous improvement is at the heart of everything we do.</p>
 			</div>
-		{% endfor %}
-	</dl>
-{% endif %}
+			<div class="image">
+				<img src="{{ site.baseurl }}/images/system1.jpeg" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>Infrastructure</h2>
+				<p>We offer comprehensive IT infrastructure services designed to meet the evolving needs of modern organizations. Our services include everything from network design and implementation to cloud migration and data center management. We work closely with our clients to understand their unique requirements and provide tailored solutions that align with their business goals. Our team of experts has extensive experience in the latest technologies and industry best practices, ensuring that our clients have access to the most innovative and effective solutions available. We are committed to delivering reliable, scalable, and secure infrastructure services that enable our clients to focus on their core business activities with confidence.</p>
+			</div>
+			<div class="image">
+				<img src="{{ site.baseurl }}/images/system2.jpg" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2>Software</h2>
+				<p>We provide a wide range of software services to help organizations streamline their operations and improve their business performance. Our services include software design and development, quality assurance, testing, deployment, and maintenance. We work with our clients to understand their business objectives and design customized solutions that align with their goals. Our team of experts has extensive experience in various programming languages and development frameworks, enabling us to deliver innovative and effective software solutions. We are committed to delivering high-quality services that are scalable, reliable, and secure, ensuring that our clients achieve maximum return on investment.</p>
+			</div>
+			<div class="image">
+				<img src="{{ site.baseurl }}/images/system3.jpeg" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+</div>
