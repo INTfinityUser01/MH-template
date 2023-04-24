@@ -2,8 +2,8 @@
   link: /about/
   new_window: false
   highlight: false
-- name: SYSTEM
-  link: /system/
+- name: SERVICES
+  link: /services/
   new_window: false
   highlight: false
 - name: CONTACT
